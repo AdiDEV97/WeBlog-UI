@@ -97,7 +97,7 @@ const HeaderComponent = ({ direction}) => {
   return (
     <div className="header fixed-tops">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Link className="navbar-brand" to="/home">
+        <Link className="navbar-brand" to="/">
           Weblog
         </Link>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
