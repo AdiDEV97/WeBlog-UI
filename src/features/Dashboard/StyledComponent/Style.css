@@ -1,0 +1,29 @@
+.navbars {
+    /* background-color: #272727; */
+    color: aliceblue;
+    width: 99%;
+    overflow        : auto;
+    white-space     : nowrap;
+}
+
+.navbars::-webkit-scrollbar {
+    /* width: 0px; */
+    height: 1px;
+  }
+
+  /* Track */
+.navbars::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .navbars::-webkit-scrollbar-thumb {
+    
+    background: #888; 
+  }
+
+  /* Handle on hover */
+.navbars::-webkit-scrollbar-thumb:hover {
+    background: #e49393; 
+    width: 2px;
+  }

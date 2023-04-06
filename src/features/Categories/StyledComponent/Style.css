@@ -1,0 +1,64 @@
+.popUpTable {
+    background-color   : rgb(71, 72, 73);
+    color              : white;
+    /* margin           : 25%; */
+
+    z-index: 1;
+
+    position       : fixed;
+    top            : 200px;
+    right          : 20px;
+    left           : 350px;
+    width          : 50%;
+    transition     : all 300ms;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    /* .category-table {
+        width: 80%;
+    } */
+}
+
+.category-table {
+    width: 100%;
+    height:650px;
+    overflow:auto;
+}
+
+/* .category-row {
+    width: ;
+} */
+
+/* Hide Scrollbar but keeps in function */
+/* .category-table::-webkit-scrollbar {
+    display: none;
+  } */
+
+/* .categoryTitle {
+    width: 2%;
+} */
+
+/* .operations {
+    width: 20px;
+} */
+
+.vline {
+    border-left: 1px dotted rgb(72, 71, 71);
+    height: 100%;
+}
+
+.updateButton, .deleteButton {
+    cursor: pointer;
+}
+
+.cancelPopUp {
+    width: 100%;
+    text-align: end;
+    cursor: pointer;
+}
+

@@ -1,0 +1,5 @@
+.headers {
+    position: sticky; /* Allocates space for the element, but moves it with you when you scroll */
+    top: 0; /* specifies the start position for the sticky behavior - 0 is pretty common */
+    z-index: 1;
+  }

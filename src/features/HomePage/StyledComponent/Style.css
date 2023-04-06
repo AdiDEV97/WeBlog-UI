@@ -1,0 +1,8 @@
+.page-item.active .page-link {
+    background-color: black;
+    border: none;
+}
+
+.page-link {
+    color: black;
+}

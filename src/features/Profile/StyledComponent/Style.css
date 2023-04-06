@@ -1,0 +1,55 @@
+div {
+    /* background-color: rgb(120, 102, 138); */
+    /* padding: 7.4%; */
+    /* height: 100%; */
+}
+
+.profilePage {
+    /* width: auto; */
+    font-size: larger;
+    /* margin-top: 4%; */
+    /* margin-left : 40%; */
+    /* padding: 50%; */
+}
+
+/* .profileRow {
+    padding-top: 5%;
+} */
+
+.form-group-profile {
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+    width: 50%;
+    /* padding: 7%; */
+}
+
+.form-control {
+    font-size: large;
+    /* width: 150px; */
+    /* margin-left: 5%; */
+}
+
+/* form .form-control {
+    border: none;
+    font-size: large;
+    width: 150px;
+    margin-left: 5%;
+} */
+
+.profile-form {
+    margin-left: 0%;
+}
+
+.profileTable {
+    width: 100%;
+}
+
+.labelName {
+    width: 150px
+}
+
+.labelValue {
+    width: 500px;
+}

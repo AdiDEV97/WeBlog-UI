@@ -1,0 +1,139 @@
+/* These are for scroll functionality */
+.navbars {
+    background-color: #ffffff;
+    color: rgb(19, 21, 23);
+    width: 100%;
+    overflow        : auto;
+    white-space     : nowrap;
+
+    /* Stick Category Bar at Top */
+    display: block;
+    position: sticky; /* Allocates space for the element, but moves it with you when you scroll */
+    top: 0; /* specifies the start position for the sticky behavior - 0 is pretty common */
+    z-index: 1;
+}
+
+.navbars::-webkit-scrollbar {
+    /* width: 0px; */
+    height: 1px;
+  }
+
+  /* Track */
+.navbars::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .navbars::-webkit-scrollbar-thumb {
+    
+    background: #888; 
+  }
+
+  /* Handle on hover */
+.navbars::-webkit-scrollbar-thumb:hover {
+    background: #e49393; 
+    width: 2px;
+  }
+
+.categoryName {
+  font-size: 12px;
+  /* background-color: #b8b8b8; */
+  /* width: fit-content; */
+  text-align: right;
+  /* border-radius: 15px; */
+  /* position: relative;
+  left: 0px; */
+}
+
+ .categoryTabs {
+  /* margin-top: 4%; */
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
+
+  position: sticky; /* Allocates space for the element, but moves it with you when you scroll */
+  top: 0; /* specifies the start position for the sticky behavior - 0 is pretty common */
+   z-index: 1; /*  */
+}
+
+.allCategories.Link.active {
+  background-color: aqua;
+}
+
+.commentInput {
+  /* border: none;
+  border-bottom: 2px solid black;
+  outline: 0; */
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  /* font-size: 1.4rem; */
+  color: #ccc;
+}
+
+/* .commentInput:focus {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: 1px dotted #000;
+  outline: 0;
+} */
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
+
+
+/* CSS for three Dots DropDown Menu */
+
+/* .menu-nav {
+       
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .menu-item {
+  color: #FCC;
+  padding: 3px;
+} */
+
+.three-dots:after {
+  cursor: pointer;
+  color: #444;
+  content: '\2807';
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+a div {
+  padding: 2px;
+}
+
+.dropdownComment {
+  position: absolute;
+  right: 10px;
+  /* background-color: white; */
+  background-color: #857e7e;
+  
+  outline: none;
+  opacity: 0;
+  z-index: -1;
+  max-height: 0;
+  transition: opacity 0.1s, z-index 0.1s, max-height 5s;
+}
+
+.dropdownComment :hover, .dropdownMenuComment :hover {
+  
+  cursor: pointer;
+}
+
+/* .dropdown-container:focus {
+  outline: none;
+} */
+
+.dropdownComment-container:focus .dropdownComment {
+  opacity: 1;
+  z-index: 100;
+  max-height: 100vh;
+  transition: opacity 0.2s, z-index 0.2s, max-height 0.2s;
+}
