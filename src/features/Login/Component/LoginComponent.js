@@ -34,7 +34,7 @@ const LoginComponent = () => {
             doLogin(resp, () => {
                 console.log('Login detail is stored in localStorage.');
                 //navigate('/user/dashboard');
-                window.location.replace("http://localhost:3000/home");
+                window.location.replace(`${BASE_URL}/home`);
                 //window.location.reload();
                 //toast.success("Login Successfull!!", {position: toast.POSITION.BOTTOM_CENTER});
             })
