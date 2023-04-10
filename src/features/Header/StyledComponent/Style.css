@@ -3,3 +3,10 @@
     top: 0; /* specifies the start position for the sticky behavior - 0 is pretty common */
     z-index: 1;
   }
+.header-right {
+  text-align: center;
+}
+
+.heading-bar {
+  width: 300%;
+}

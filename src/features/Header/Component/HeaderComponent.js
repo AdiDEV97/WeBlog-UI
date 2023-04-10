@@ -95,8 +95,8 @@ const HeaderComponent = ({ direction}) => {
   console.log(role);
 
   return (
-    <div className="header fixed-tops">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    // <div className="header fixed-tops">
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark">
         <Link className="navbar-brand" to="/">
           Weblog
         </Link>
@@ -127,7 +127,7 @@ const HeaderComponent = ({ direction}) => {
             </li>
 
             {
-              role==501 && login && (
+              role===501 && login && (
                 <>
                   {/* <li className="nav-item active">
                     <Link className="nav-link" to="/user/test">
@@ -235,7 +235,7 @@ const HeaderComponent = ({ direction}) => {
           )}
         </div>
       </nav>
-    </div>
+    // </div>
   );
 };
 
