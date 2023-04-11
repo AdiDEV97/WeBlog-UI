@@ -19,13 +19,6 @@ const FeedsByCategory = (props, {direction}) => {
 
     const [error, setError] = useState('');
 
-    const [heading, setHeading] = useState('All Posts');
-
-    const [dropdownOpenMoreVert, setDropdownOpenMoreVert] = useState(false);
-    const toggleMoreVert = (id) => setDropdownOpenMoreVert((id) => !id);
-
-    //const navigate = useNavigate();
-
     const addedDate = (date) => {
     return new Date(date).toLocaleDateString("en-US", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   }
@@ -42,13 +35,11 @@ const FeedsByCategory = (props, {direction}) => {
         if(err) {
           setError(err.message);
         }
-        //setError(err);
         });
     }
 
     function categoryFeedsData() {
         CategoryFeedsApi(getCurrentUserDetails().id, props.cid).then((resp) => {
-        //allFeedsApi(getCurrentUserDetails().id).then((resp) => {
           console.log("All feeds by id - ");
           console.log(resp);
           setAllFeeds(resp);
@@ -58,8 +49,7 @@ const FeedsByCategory = (props, {direction}) => {
           console.log('Error - ');
           console.log(err.message);
           console.log("Error Type - ", typeof(err.message));
-          
-          //setError(err.message);
+
           if(err) {
             setError(err.message);
           }
