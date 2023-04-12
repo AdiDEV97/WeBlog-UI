@@ -1,15 +1,14 @@
 import { Grid } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { Button, Card, CardText, CardTitle, Col, Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap';
 import { getCurrentUserDetails } from '../../../Auth';
 import { BASE_URL } from '../../../Services/ApiHandler';
 import { allCategoriesApi } from '../../Categories/Service/ApiHandler';
 import { allFeedsApi, CategoryFeedsApi, deleteFeedApi } from '../Service/ApiHandler';
 import '../StyledComponent/Style.css';
 
-const FeedsByCategory = (props, {direction}) => {
+const FeedsByCategory = (props) => {
 
     const [allFeeds, setAllFeeds] = useState([]);
 
