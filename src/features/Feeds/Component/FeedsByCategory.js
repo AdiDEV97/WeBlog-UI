@@ -82,24 +82,29 @@ const FeedsByCategory = (props) => {
 
     useEffect(() => {
       document.title = 'Weblog - My Feeds';
-        allCategoriesData();
-        setPostTabId(props.cid);
-        if(postTabId===0 || props.cid ===0) {
-            allFeedsData();
-        }
-        else {
-            categoryFeedsData();
-        }
 
-        console.log('Data from FeedComponent - ' + props.cid);
-        console.log(props.cid);
-    }, [props, postTabId])
+      console.log('PROPS -----------------');
+      console.log(props);
+
+      allCategoriesData();
+      setPostTabId(props.cid);
+      if(postTabId===0 || props.cid ===0) {
+          allFeedsData();
+      }
+      else {
+          categoryFeedsData();
+      }
+
+      console.log('Data from FeedComponent - ' + props.cid);
+      console.log(props.cid);
+  }, [props, postTabId])
 
     console.log('Len All Feeds -- ' + allFeeds.length);
 
 
   return (
     <div>
+      {/* <h3>{postTabId===0 ? "My Realm - AllPosts" : `My Realm - ${allCategories[postTabId-1].category_title}`}</h3> */}
       <h3>My Realm</h3>
       <div className="container text-justify my-4">
         {

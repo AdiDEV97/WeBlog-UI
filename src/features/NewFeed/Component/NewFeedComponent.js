@@ -136,7 +136,7 @@ const NewFeedComponent = (props) => {
         <FormGroup className="text-justify mx-5">
             <Label for="category">Select Category</Label><br/>
             <Input type="select" id="category" name="category_id" placeholder='Select..' onChange={handleChange} style={{width:'100%'}}>
-                <option value="select" selected disabled>Select..</option>
+                <option defaultValue="select" select="true" disabled>Select..</option>
               {category && (
                 category.map((c, index) => {
                     return (<option key={index} value={c.categoryId}>{c.category_title}</option>);
