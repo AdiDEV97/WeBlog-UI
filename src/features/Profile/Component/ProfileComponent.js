@@ -32,35 +32,35 @@ const ProfileComponent = () => {
             <div className='form-group-profile'>
               <tr>
                 <td className='labelName'><span className='mx-3'>UserId</span></td>
-                <td className='labelValue'><Input className='form-control' type='text' defaultValue={user.id} /></td>
+                <td className='labelValue'><Input className='form-control' type='text' value={user.id} disabled /></td>
               </tr>
             </div>
             <hr/>
             <div className='form-group-profile'>
               <tr>
                 <td className='labelName'><span className='mx-3'>Username</span></td>
-                <td className='labelValue'><Input className='form-control' type='text' defaultValue={user.name} /></td>
+                <td className='labelValue'><Input className='form-control' type='text' value={user.name} disabled /></td>
               </tr>
             </div>
             <hr/>
             <div className='form-group-profile'>
               <tr>
                 <td className='labelName'><span className='mx-3'>Email</span></td>
-                <td className='labelValue'><Input className='form-control' type='text' defaultValue={user.email} /></td>
+                <td className='labelValue'><Input className='form-control' type='text' value={user.email} disabled /></td>
               </tr>
             </div>
             <hr/>
             <div className='form-group-profile'>
               <tr>
                 <td className='labelName'><span className='mx-3'>Role</span></td>
-                <td className='labelValue'><Input className='form-control' type='text' defaultValue={user.roles[0].roleId==501 ? "ADMIN" : "USER"} /></td>
+                <td className='labelValue'><Input className='form-control' type='text' value={user.roles[0].roleId==501 ? "ADMIN" : "USER"} disabled /></td>
               </tr>
             </div>
             <hr/>
             <div className='form-group-profile'>
               <tr>
                 <td className='labelName'><span className='mx-3'>Total Blogs</span></td>
-                <td className='labelValue'><Input className='form-control' type='text' defaultValue={blogCount} /></td>
+                <td className='labelValue'><Input className='form-control' type='text' value={blogCount} disabled /></td>
               </tr>
             </div>
             <hr/>
