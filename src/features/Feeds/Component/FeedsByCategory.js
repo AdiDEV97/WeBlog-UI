@@ -104,12 +104,12 @@ const FeedsByCategory = (props) => {
 
   return (
     <div>
-      {/* <h3>{postTabId===0 ? "My Realm - AllPosts" : `My Realm - ${allCategories[postTabId-1].category_title}`}</h3> */}
-      <h3>My Realm</h3>
+      {postTabId===0 ? <h3>My Realm - AllPosts</h3> : <h3>My Realm - {allCategories.map((ce) => {if(ce.categoryId===postTabId){return(<>{ce.category_title}</>)} })}</h3>}
       <div className="container text-justify my-4">
         {
             allFeeds.length!=0 && error === '' && (
               allFeeds.map((feed, index) => {
+                
                 console.log('Length - ' + allFeeds.length);
                 return (
                     <Grid className="bg-light my-4 p-2" container spacing={2} key={index}>

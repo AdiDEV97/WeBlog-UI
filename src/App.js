@@ -8,7 +8,7 @@ import UserProvider from './Context/UserProvider';
 
 function App() {
 
-  console.log = function() {}
+  // console.log = function() {}
 
   return (
     <div className="App">
