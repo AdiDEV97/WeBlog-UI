@@ -18,7 +18,7 @@ const AboutComponent = () => {
       <p className='content'>At our core, we believe in the power of storytelling and the importance of diverse perspectives. So our mission is to provide a user-friendly platform for individuals to express themselves, share their ideas, and connect with others who have similar interests.</p>
 
       <p className='heading'>Contact Us</p>
-      <p className='content'>If you hve any questions or comments, please feel free to contact us at <a href="/about">queryline1@gmail.com</a>. We would love to hear from you!</p>
+      <p className='content'>If you hve any questions or comments or want to add new category as per your need, please feel free to mail us at <a href="/about">queryline1@gmail.com</a>. We would love to hear from you!</p>
 
       <p className='heading'>Thank You</p>
       <p className='content'>Thank you for choosing our blogging application. We can't wait to see what stories and ideas you will share with the world!. All the best!!</p>
