@@ -97,11 +97,11 @@ const FeedsComponent = () => {
         {/* Horizontal NavBar Starts */}
         <div className="categoryTabs">
           <nav className="navbars text-justify">
-            <Link className="navbar-brand text-secondary" to="/user/my-feeds" onClick={() => handleOnlyAllPostTab()} style={style} >All Posts</Link>
+            <Link className="navbar-brand text-secondary" to="/user/my-feeds" onClick={() => handleOnlyAllPostTab()} style={style} title='Get all your posts'>All Posts</Link>
             {
               allCategories.map((category, index) => {
                 return (
-                 <Link className="navbar-brand text-secondary mx-3" to="/user/my-feeds" onClick={() => handleCategoryTabs(category.categoryId)} style={style} key={index} >{category.category_title}</Link>
+                 <Link className="navbar-brand text-secondary mx-3" to="/user/my-feeds" onClick={() => handleCategoryTabs(category.categoryId)} style={style} key={index} title={category.category_description}>{category.category_title}</Link>
                 )
               })
             }
