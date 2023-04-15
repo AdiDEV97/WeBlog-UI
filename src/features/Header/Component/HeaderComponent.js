@@ -3,14 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import '../StyledComponent/Style.css';
 import { doLogout, getCurrentUserDetails, isLoggedIn } from "../../../Auth";
 import { toast } from "react-toastify";
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from "reactstrap";
-import FeedsComponent from "../../Feeds/Component/FeedsComponent";
-import { getUserProfileImageApi } from "../Service/ApiHandler";
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 import { BASE_URL } from "../../../Services/ApiHandler";
 
 const HeaderComponent = ({ direction}) => {
@@ -30,8 +23,6 @@ const HeaderComponent = ({ direction}) => {
   // This state and toggleMore function is to handle 'More' dropdown
   const [dropdownOpenMore, setDropdownOpenMore] = useState(false);
   const toggleMore = () => setDropdownOpenMore((prevState) => !prevState);
-
-  const url = localStorage.getItem('D:\My Projects\MyBlog\myblog\src\assets\weblog.png');
 
   //-------------------------------------------------------------------------------------------------
    // Decode Jwt Token (SAME FUNCTION CODE FOR DECODEING JWT TOKEN)
@@ -172,7 +163,7 @@ const HeaderComponent = ({ direction}) => {
                   <DropdownItem>
                     <a
                       className="text-dark"
-                      href="https://github.com/"
+                      href="https://github.com/AdiDEV97"
                       style={{ textDecoration: "none" }}
                     >
                       GitHub

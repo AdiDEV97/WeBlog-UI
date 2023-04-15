@@ -30,8 +30,8 @@ const NewFeedComponent = (props) => {
     const [postData, setPostData] = useState({
         post_title: '',
         post_content: '',
-        category_id: 1
-    })
+        category_id: 'Select..'
+    });
 
     function getAllCategories() {
         allCategoriesApi().then(resp => {
@@ -80,11 +80,11 @@ const NewFeedComponent = (props) => {
         const name = event.target.name;
         const value = event.target.value;
         setPostData({...postData, [name]: value});
-        //console.log(event);
+        console.log(name + ' : ' + value);
     }
 
     const handlePostContentFieldChange = (data) => {
-        setPostData({...postData, 'post_content': data})
+        setPostData({...postData, 'post_content': data});
     }
 
     // Handle Image Upload OnChange Event
@@ -108,11 +108,11 @@ const NewFeedComponent = (props) => {
 
     const handleReset = () => {
         setPostData({
-          post_title: "",
-          post_content: "",
-          category_id: ""
+          post_title: '',
+          post_content: '',
+          category_id: 'Select..'
         });
-        document.getElementById("category").value = "select";
+        document.getElementById("category").value = "Select..";
         document.getElementById("jodit").value = "";
         document.getElementById("imageData").value = ""; // Resetting Input type = file
         setContent('');
@@ -129,14 +129,13 @@ const NewFeedComponent = (props) => {
 
         <FormGroup className="text-justify mx-5">
           <Label for="content">Story Content</Label>
-          {/* <Input id="content" type="textarea" placeholder="Start here.." name="post_content" value={postData.post_content} onChange={handleChange} style={{ height: "300px" }}/> */}
           <JoditEditor id="jodit" ref={editor} value={content} onChange={handlePostContentFieldChange} height="200px" />
         </FormGroup>
 
         <FormGroup className="text-justify mx-5">
             <Label for="category">Select Category</Label><br/>
             <Input type="select" id="category" name="category_id" placeholder='Select..' onChange={handleChange} style={{width:'100%'}}>
-                <option defaultValue="select" select="true" disabled>Select..</option>
+                <option defaultValue="select" select="true">Select..</option>
               {category && (
                 category.map((c, index) => {
                     return (<option key={index} value={c.categoryId}>{c.category_title}</option>);
