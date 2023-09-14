@@ -1,8 +1,9 @@
 import axios from "axios";
 import { getToken } from "../Auth";
 
-//export const BASE_URL='http://localhost:5000';
-export const BASE_URL='http://blogging-env.eba-cpfhpmvj.ap-southeast-2.elasticbeanstalk.com'
+//export const BASE_URL='http://localhost:3000';
+export const BASE_URL='http://localhost:5000';
+//export const BASE_URL='http://blogging-env.eba-cpfhpmvj.ap-southeast-2.elasticbeanstalk.com'
 
 // ApiRequest for Public URLs
 export const performApiRequest = axios.create({
