@@ -1,3 +1,5 @@
+/* Index page - index.js */
+
 // isLoggedIn
 export const isLoggedIn = () => {
     const data = localStorage.getItem("data");
