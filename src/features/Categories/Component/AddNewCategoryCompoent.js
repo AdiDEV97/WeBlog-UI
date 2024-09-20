@@ -6,6 +6,8 @@ import '../StyledComponent/Style.css';
 import { AddNewCategoryApi, allCategoriesApi, DeleteCategoryApi, UpdateCategoryApi } from '../Service/ApiHandler'
 import '../StyledComponent/Style.css';
 
+// Add New Category Component
+
 const AddNewCategoryCompoent = () => {
 
     const [category, setCategory] = useState([])
