@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import '../StyledComponent/Style.css';
 
+// About Component
+
 const AboutComponent = () => {
 
   useEffect(() => {
