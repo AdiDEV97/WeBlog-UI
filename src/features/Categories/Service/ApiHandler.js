@@ -1,5 +1,7 @@
 import { BASE_URL, performApiRequest, performPrivateApiRequest } from "../../../Services/ApiHandler"
 
+// Categories API Handler
+
 // Get all Categories
 export const allCategoriesApi = async () => {
     const response = await performApiRequest.get(`${BASE_URL}/category/all-categories`, null);
