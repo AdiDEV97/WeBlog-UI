@@ -1,6 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
+// Dashborard Component
+
 const DashboardComponent = () => {
   return (
     <div>
