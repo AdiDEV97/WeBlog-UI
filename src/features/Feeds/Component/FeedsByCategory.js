@@ -6,6 +6,9 @@ import { getCurrentUserDetails } from '../../../Auth';
 import { BASE_URL } from '../../../Services/ApiHandler';
 import { allCategoriesApi } from '../../Categories/Service/ApiHandler';
 import { allFeedsApi, CategoryFeedsApi, deleteFeedApi } from '../Service/ApiHandler';
+
+// Feeds By Category Component
+
 import '../StyledComponent/Style.css';
 
 const FeedsByCategory = (props) => {
