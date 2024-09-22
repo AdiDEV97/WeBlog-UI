@@ -10,6 +10,8 @@ import { allFeedsApi } from '../Service/ApiHandler';
 import '../StyledComponent/Style.css';
 import FeedsByCategory from './FeedsByCategory';
 
+// Feeds Component
+
 const FeedsComponent = () => {
 
     const [allFeeds, setAllFeeds] = useState([]);
