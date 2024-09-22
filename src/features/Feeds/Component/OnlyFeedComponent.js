@@ -9,6 +9,8 @@ import NewFeedComponent from '../../NewFeed/Component/NewFeedComponent';
 import UpdateFeed from '../../NewFeed/Container/UpdateFeed';
 import { addCommentByPostApi, deleteCommentsByPostApi, feedImageUrl, getCommentsByPostApi, onlyFeedApi } from '../Service/ApiHandler';
 
+// Only Feed Component
+
 const OnlyFeedComponent = () => {
 
   const [feed, setFeed] = useState();
