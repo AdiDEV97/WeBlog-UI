@@ -1,5 +1,7 @@
 import { BASE_URL, performApiRequest, performPrivateApiRequest } from "../../../Services/ApiHandler"
 
+// Feeds API Handler
+
 export const allFeedsApi = async (user_id) => {
     const response = await performPrivateApiRequest.get(`${BASE_URL}/api/post/byUser/user/${user_id}`, user_id);
     return response.data;
