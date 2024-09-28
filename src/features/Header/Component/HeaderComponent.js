@@ -6,6 +6,8 @@ import { toast } from "react-toastify";
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 import { BASE_URL } from "../../../Services/ApiHandler";
 
+// Header Component
+
 const HeaderComponent = ({ direction}) => {
   const [login, setLogin] = useState(false);
 
