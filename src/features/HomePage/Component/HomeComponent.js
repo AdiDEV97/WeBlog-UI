@@ -6,6 +6,8 @@ import { BASE_URL } from '../../../Services/ApiHandler';
 import { allPostsApi, allPostsByCategoryApi } from '../Services/ApiHandler';
 import '../StyledComponent/Style.css';
 
+// Home Component
+
 const HomeComponent = () => {
 
   const [allPosts, setAllPosts] = useState([]);
