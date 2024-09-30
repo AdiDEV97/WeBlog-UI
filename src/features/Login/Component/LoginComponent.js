@@ -4,6 +4,8 @@ import { toast } from 'react-toastify';
 import { doLogin, getCurrentUserDetails } from '../../../Auth';
 import { loginApi } from '../Service/ApiHandler';
 
+// Login Component
+
 const LoginComponent = () => {
     const [userCred, setUserCred] = useState({
         username: '',
