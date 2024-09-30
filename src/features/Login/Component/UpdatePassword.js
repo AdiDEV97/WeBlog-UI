@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { updatePasswordApi } from '../Service/ApiHandler';
 
+// Update Password Compoenent
+
 const UpdatePassword = () => {
 
     const [UpdateCredentials, setUpdateCredentials] = useState({
