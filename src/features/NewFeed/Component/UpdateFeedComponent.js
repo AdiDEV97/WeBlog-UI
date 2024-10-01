@@ -7,6 +7,8 @@ import { allCategoriesApi } from '../../Categories/Service/ApiHandler';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
+// Update Component
+
 const UpdateFeedComponent = (props) => {
 
     const editor = useRef(null);
