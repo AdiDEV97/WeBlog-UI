@@ -5,6 +5,8 @@ import { BASE_URL } from '../../../Services/ApiHandler';
 import { allFeedsApi } from '../../Feeds/Service/ApiHandler';
 import '../StyledComponent/Style.css';
 
+// Profile Component
+
 const ProfileComponent = () => {
 
   const user = getCurrentUserDetails();
