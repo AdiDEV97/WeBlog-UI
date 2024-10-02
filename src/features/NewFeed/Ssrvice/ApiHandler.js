@@ -1,5 +1,7 @@
 import { BASE_URL, performPrivateApiRequest } from "../../../Services/ApiHandler"
 
+// API Handler
+
 // Create New Post
 export const createNewPostApi = async (userId, categoryId, newPost) => {
     const response = await performPrivateApiRequest.post(`${BASE_URL}/api/post/user/${userId}/category/${categoryId}/new-post`, newPost);
