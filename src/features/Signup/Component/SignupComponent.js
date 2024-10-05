@@ -4,6 +4,8 @@ import { toast } from 'react-toastify'
 import { FormGroup, Input, Label } from 'reactstrap';
 import { signupApi, uploadProfileImageApi } from '../Service/ApiHandler';
 
+// SignUp Component
+
 const SignupComponent = () => {
     
     const [user, setUser] = useState({
