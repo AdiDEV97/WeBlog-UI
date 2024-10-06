@@ -18,6 +18,8 @@ import Signup from '../features/Signup/Container/Signup';
 import PrivateRoute from '../PrivateRoute';
 import SecuredRoute from '../SecuredRoute';
 
+// Routers Component
+
 const Routers = () => {
   return (
     <Routes>
